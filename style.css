@@ -1,51 +1,63 @@
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    text-align: center;
     color: #333;
 }
 
-#rollButton {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
 }
 
-#rollButton:hover {
-    background-color: #45a049;
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 .result {
-    font-size: 48px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result p {
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-    margin-top: 20px;
 }
