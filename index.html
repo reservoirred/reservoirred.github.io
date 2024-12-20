@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Arc Length Calculator</h1>
-        <p>Calculate the length of an arc given the radius and angle of rotation.</p>
+        <p>Calculate the length of an arc, the straight-line distance between its start and end points, and the difference between the two.</p>
         
         <form id="arc-form">
             <label for="radius">Radius (inches):</label>
@@ -18,11 +18,13 @@
             <label for="angle">Angle of Rotation (degrees):</label>
             <input type="number" id="angle" name="angle" required>
             
-            <button type="button" onclick="calculateArcLength()">Calculate Arc Length</button>
+            <button type="button" onclick="calculateArcLength()">Calculate</button>
         </form>
         
         <div id="result" class="result">
             <p id="arc-length">Arc Length: </p>
+            <p id="chord-length">Chord Length: </p>
+            <p id="difference">Difference: </p>
         </div>
     </div>
 
